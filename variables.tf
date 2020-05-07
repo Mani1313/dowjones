@@ -1,6 +1,6 @@
 variable "aws_region" {
   description = "The AWS region things are created in"
-  default     = "ap-southeast-1"
+  default     = "ap-south-1"
 }
 
 variable "BUCKET_NAME" {
@@ -9,15 +9,15 @@ variable "BUCKET_NAME" {
 
 variable "SUBNET_PUB1" {
   description = "Existing Subnet ID"
-  default = "subnet-4035fb24"
+  default = "subnet-0665ad970b2dcd9e8"
 }
 variable "SUBNET_PUB2" {
    description = "Existing Subnet ID"
-   default = "subnet-af0c5dd9"
+   default = "subnet-0e3e1c44"
 }
 variable "VPC_ID" {
   description = "Existing VPC ID"
-  default = "vpc-a5f0e2c0"
+  default = "vpc-adb810c4"
 }
 
 variable "ecs_task_execution_role_name" {
@@ -37,7 +37,7 @@ variable "az_count" {
 
 variable "app_image" {
   description = "Docker image to run in the ECS cluster"
-  default     = "nginx:latest"
+  default     = "672721203026.dkr.ecr.ap-south-1.amazonaws.com/myapp:nginx1"
 }
 
 variable "app_port" {
