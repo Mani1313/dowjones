@@ -7,7 +7,7 @@ node {
         sh "docker build -t 672721203026.dkr.ecr.ap-south-1.amazonaws.com/myapp:1 ."
     }
     stage('Push image') {
-        docker.withRegistry('https://672721203026.dkr.ecr.ap-south-1.amazonaws.com', 'ecr:us-east-2:bttrm-backend-ecr') {
+        docker.withRegistry('https://672721203026.dkr.ecr.ap-south-1.amazonaws.com', 'ecr:ap-south-1:ecr_id') {
             sh "docker push 672721203026.dkr.ecr.ap-south-1.amazonaws.com/myapp:1"
         }
     }
