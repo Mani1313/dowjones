@@ -1,7 +1,7 @@
 node {
     def app
     stage('Clone repository') {
-        git branch: "master", url: "git@github.com:Mani1313/dowjones.git"
+        git branch: "master", url: "https://github.com/Mani1313/dowjones.git"
     }
     stage('Build image') {
         sh "docker build -t 672721203026.dkr.ecr.ap-south-1.amazonaws.com/myapp:1 ."
