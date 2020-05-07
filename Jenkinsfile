@@ -11,3 +11,4 @@ node {
             sh "docker push 672721203026.dkr.ecr.ap-south-1.amazonaws.com/myapp:1"
         }
     }
+}
